@@ -1,0 +1,44 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    background: var(--card-bg);
+    padding: 8px;
+    gap: 10px;
+    font-size: 16px;
+    border-radius: var(--radius) var(--radius) 0 0;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    flex-wrap: wrap;
+}
+
+footer a {
+    border: 1px solid transparent;
+    border-radius: var(--radius);
+    padding: 4px;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+footer a:hover {
+    border-color: var(--hover-border);
+    transform: scale(var(--hover-scale));
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 720px) {
+    footer {
+        font-size: 1em;
+        gap: 4px;
+    }
+
+    footer .footer-link {
+        padding: 0;
+    }
+}

@@ -1,0 +1,187 @@
+main {
+    font-size: 1em;
+    background: var(--card-bg);
+    margin: 4px;
+    padding: 16px;
+    border-radius: var(--radius);
+}
+
+main#index {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.card,
+.projectCard,
+.maininfo {
+    box-shadow: 0 0 8px #000;
+    padding: 16px;
+    border-radius: var(--radius);
+    transition: var(--transition);
+    background: var(--card-bg);
+    color: var(--text-color);
+    border: 2px solid var(--hover-border)
+}
+
+.card {
+    margin: 16px;
+    width: calc(50% - 48px);
+    box-sizing: border-box;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.projectCard {
+    width: 30%;
+    max-width: 768px;
+    cursor: pointer;
+    background: var(--primary-bg);
+}
+
+.projectCard:hover {
+    transform: scale(1.05);
+}
+
+.projectCard.active {
+    transform: scale(1.05);
+    background: var(--card-bg);
+}
+
+.maininfo:not(.about) {
+    margin: 32px auto;
+    max-width: 80%;
+    cursor: pointer;
+}
+
+.maininfo.about {
+    margin: 32px auto;
+    max-width: 80%;
+}
+
+main#projects {
+    display: flex;
+    flex-direction: column;
+}
+
+.projectImage {
+    align-self: center;
+    padding: 4px;
+    border-radius: var(--radius);
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 60%;
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.3s ease, transform 0.3s ease, padding 0.3s ease;
+    display: block;
+    overflow: hidden;
+    background: var(--card-bg);
+    border: 2px solid var(--hover-border)
+}
+
+.projectImage:not(.shown) {
+    opacity: 0;
+    transform: scale(0.95);
+    padding: 0;
+    pointer-events: none;
+}
+
+.projectImage.shown {
+    opacity: 1;
+    transform: scale(1);
+    padding: 16px;
+    border-radius: var(--radius);
+}
+
+.projectElement {
+    display: flex;
+    flex-direction: row;
+    margin: 8px;
+    background: var(--primary-bg);
+    border-radius: var(--radius);
+    justify-content: space-between;
+    padding: 16px;
+    border: 2px solid var(--hover-border)
+
+}
+
+h2,
+h3,
+p,
+h1 {
+    text-align: center;
+    color: var(--text-color);
+    margin: 0 auto;
+    width: fit-content;
+    padding: 4px;
+    border-radius: var(--radius);
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.25em;
+}
+
+p {
+    font-size: 1em;
+}
+
+main.contacts {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 36px;
+    font-weight: 900;
+    transition: var(--transition);
+}
+
+main.contacts a,
+footer a {
+    color: var(--text-color);
+    text-decoration: none;
+    display: inline-block;
+    transition: var(--transition);
+}
+
+main.contacts a:hover {
+    color: var(--primary-color);
+    transform: scale(1.3);
+    background: var(--primary-bg);
+    padding: 16px;
+    border-radius: var(--radius);
+}
+
+
+@media screen and (max-width: 720px) {
+    html {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+    
+    h2 {
+        font-size: 1em;
+    }
+    
+    h3 {
+        font-size: 0.75em;
+    }
+    
+    p {
+        font-size: .5em;
+    }
+}

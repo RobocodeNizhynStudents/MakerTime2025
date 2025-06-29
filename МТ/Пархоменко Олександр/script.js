@@ -5,14 +5,17 @@ document.addEventListener("DOMContentLoaded", () => {
         if(bwmCard && bwmImage) {
             bwmCard.addEventListener("click", () => {
                 bwmImage.classList.toggle("shown");
+                bwmCard.classList.toggle("active");
             });
         }
 
-        const tdmCard = document.querySelector(".projectCard.tdm");
-        const tdmImage = document.querySelector(".projectImage.tdm");
-        if(tdmCard && tdmImage) {
-            tdmCard.addEventListener("click", () => {
-                tdmImage.classList.toggle("shown");
+        const arrowCard = document.querySelector(".projectCard.arrow");
+        const arrowImage = document.querySelector(".projectImage.arrow");
+        if(arrowCard && arrowImage) {
+            arrowCard.addEventListener("click", () => {
+                arrowImage.classList.toggle("shown");
+                arrowCard.classList.toggle("active");
+
             });
         }
     }

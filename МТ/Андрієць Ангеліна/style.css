@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#backgrnd {
+  background-color: rgb(0, 238, 255);
+}
+
+.col {
+  background-color: rgb(0, 110, 255);
+}
+
+.coll {
+  background-color: blueviolet;
+}

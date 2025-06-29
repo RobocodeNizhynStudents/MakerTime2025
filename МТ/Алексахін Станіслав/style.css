@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+footer {
+  display: flex;
+ 
+  flex-direction: column;
+  background-color:gray;
+  padding: 5px 20%;
+  gap: 35px;
+
+}
+
+nav.navbar.navbar-expand-lg {
+  padding: 15px;
+}
+body{
+  background-color: black;
+}
+p:hover{
+ transform: scale(1.2);
+ font-size: 16px;
+ transition: 1.5s;
+}
+p{
+  color: black;
+}
+h1{
+  text-align: center;
+}
+img{
+  width: 300px;
+  height: auto;
+}

@@ -1,14 +1,13 @@
 * {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
 }
 
 footer {
   display: flex;
  
   flex-direction: column;
-  background-color:gray;
+  background-color: deepskyblue;
   padding: 5px 20%;
   gap: 35px;
 
@@ -19,6 +18,9 @@ nav.navbar.navbar-expand-lg {
 }
 body{
   background-color: black;
+  display: flex;
+  flex-direction: column;
+  overflow-x: none;
 }
 p:hover{
  transform: scale(1.2);
@@ -32,6 +34,7 @@ h1{
   text-align: center;
 }
 img{
-  width: 300px;
+  align-self: center;
+  width: 400px;
   height: auto;
 }

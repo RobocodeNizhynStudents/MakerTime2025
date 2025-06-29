@@ -10,3 +10,7 @@ color: chartreuse;
 .text1:hover{
   color: blue;
 }
+.box10:hover:{
+color: black;
+  transition: scale(1.2) ;
+}

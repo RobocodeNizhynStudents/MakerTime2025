@@ -1,0 +1,53 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(90deg, #ff6aff, #ff00ff);
+    padding: 8px;
+    gap: 10px;
+    font-size: 16px;
+    border-radius: 16px 16px 0 0;
+
+}
+
+footer * * {
+    border: transparent 2px solid;
+    border-radius: 16px;
+    padding: 4px;
+    font-weight: 500;
+    font-size: 12px;
+
+}
+
+footer * {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+    color: black;
+}
+
+footer nav.footer-down li:hover,
+footer nav.footer-upper li:hover {
+    color: black;
+    border: #000 2px solid;
+    transform: scale(1.2);
+
+}
+
+
+@media screen and (max-width: 720px) {
+    footer {
+        font-size: 10px;
+        gap: 4px;
+    }
+
+    footer * * {
+        border: transparent 2px solid;
+        border-radius: 16px;
+        padding: 0;
+
+    }
+
+}

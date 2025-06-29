@@ -1,0 +1,117 @@
+main#index {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+
+.card {
+    box-shadow: 0 0 8px #000;
+    margin: 16px;
+    padding: 16px;
+    border-radius: 16px;
+    transition: 1s;
+    background: linear-gradient(90deg, #ff6aff, #ff00ff);
+    color: #fff;
+}
+
+
+.projectCard {
+    box-shadow: 0 0 8px #000;
+    margin: 16px;
+    padding: 16px;
+    border-radius: 16px;
+    transition: 1s;
+    background: linear-gradient(90deg, #ff6aff, #ff00ff);
+    max-width: 60%;
+    margin: 32px auto;
+    color: #fff;
+    
+}
+
+h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #fff;
+    border-radius: 16px;
+    margin: 0 auto;
+    width: fit-content;
+    padding: 4px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    border-radius: 16px;
+    margin: 0 auto;
+    width: fit-content;
+    padding: 4px;
+
+}
+
+p {
+    text-align: center;
+    color: #fff;
+    margin: 0 auto;
+    width: fit-content;
+    padding: 4px;
+    font-size: 16px;
+
+}
+
+.card:hover {
+    scale: 1.1;
+}
+.projectCard:hover {
+    scale: 1.2;
+}
+
+main#projects {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.projectImage {
+    align-self: center;
+    justify-self: center;
+    margin: 0;
+    padding: 0;
+    padding: 1px;
+    border-radius: 16px;
+    background: linear-gradient(90deg, #ff6aff, #ff00ff);
+    overflow: hidden;
+    padding: 16px;
+    text-align: center;
+    text-wrap: nowrap;
+}
+
+
+
+.projectImage:not(.shown) {
+    width: 0px;
+    padding: 0;
+
+}
+.projectImage.shown {
+    width: 360px;
+    padding: 0;
+}
+
+.whiteondark {
+    color: #282327;
+    background: #fff;
+}
+
+
+.maininfo {
+    margin: 0 auto;
+    background: linear-gradient(90deg, #ff6aff, #ff00ff);
+    padding: 16px;
+    max-width: 80%;
+    border-radius: 16px;
+    color: white;
+}
